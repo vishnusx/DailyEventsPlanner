@@ -14,9 +14,16 @@ A responsive web application that helps users optimally plan their day using AI-
 - **Frontend**: React, CSS3
 - **Backend**: Python Flask
 - **AI**: OpenAI API
+- **Hosting**: Vercel (frontend) + Render (backend)
 - **Build Tools**: npm, pip
 
-## Installation 📦
+## 🚀 Live Demo
+
+    - 🔵 Frontend: [https://daily-events-planner.vercel.app/](https://daily-events-planner.vercel.app/)
+    - 🟣 Backend API: [https://dailyeventsplanner.onrender.com/api/plan](https://dailyeventsplanner.onrender.com/api/plan)
+
+
+## Installation locally 📦
 
 ### Prerequisites
 - Node.js (v14+)
@@ -49,7 +56,7 @@ A responsive web application that helps users optimally plan their day using AI-
     echo "OPENAI_API_KEY=your_api_key_here" > .env
     ```
 
-### Running the Application 🏃
+### Running the Application locally 🏃
 1. Start the backend (runs on port 5001 by default):
     ```bash
     python app.py
