@@ -19,11 +19,18 @@ A responsive web application that helps users optimally plan their day using AI-
 
 ## 🚀 Live Demo
 
-    - 🔵 Frontend: [https://daily-events-planner.vercel.app/](https://daily-events-planner.vercel.app/)
-    - 🟣 Backend API: [https://dailyeventsplanner.onrender.com/api/plan](https://dailyeventsplanner.onrender.com/api/plan)
+    - 🔵 Frontend: [View React App](https://daily-events-planner.vercel.app/)
+    - 🟣 Backend API: [View Flask API](https://dailyeventsplanner.onrender.com/api/plan)
 
 
 ## Installation locally 📦
+
+### 🔹 Clone the Repo
+
+```bash
+git clone https://github.com/<your-username>/DailyEventsPlanner.git
+cd DailyEventsPlanner
+```
 
 ### Prerequisites
 - Node.js (v14+)
@@ -33,6 +40,7 @@ A responsive web application that helps users optimally plan their day using AI-
 ### Backend Setup
 1. Create a virtual environment:
     ```bash
+    cd backend
     python -m venv venv
     source venv/bin/activate  # Linux/Mac
     venv\Scripts\activate  # Windows
@@ -52,9 +60,9 @@ A responsive web application that helps users optimally plan their day using AI-
     npm install
     ```
 
-2. Create an environment file in the root directory:
+2. Create an environment file in the root directory or Backend:
     ```bash
-    cd backend
+
     echo "OPENAI_API_KEY=your_api_key_here" > .env
     ```
 
@@ -73,14 +81,23 @@ A responsive web application that helps users optimally plan their day using AI-
 
 ## Project Structure 📂
 DailyEventsPlanner/
-├── app.py                 # Flask backend server
-├── package.json           # Frontend dependencies
-├── package-lock.json
-├── .env                   # Environment variables
-├── src/
-│   ├── App.js             # Main React component
-│   └── App.css            # Styling components
-└── public/                # React static assets
+├── backend/
+│   ├── app.py               # Flask backend server
+│   └── requirements.txt     # Backend dependencies
+│
+├── client/
+│   ├── package.json         # Frontend dependencies
+│   ├── package-lock.json    # Locked dependency versions
+│   ├── public/              # React static assets
+│   └── src/                 # React components
+│       ├── App.js           # Main React component
+│       ├── App.css          # Styling components
+│       ├── index.js         # Entry point
+│       └── ...              # Other React files (tests, helpers)
+│
+├── .env                     # Environment variables (ignored by Git)
+├── .gitignore               # Files and folders to exclude from Git
+└── README.md                # Project documentation
 
 ## Configuration ⚙️
 
