@@ -18,7 +18,7 @@ function App() {
         return;
       }
 
-      const response = await fetch('http://localhost:5001/api/plan', {
+      const response = await fetch('https://dailyeventsplanner.onrender.com/api/plan', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text: inputText })
