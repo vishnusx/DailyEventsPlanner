@@ -28,7 +28,7 @@ A responsive web application that helps users optimally plan their day using AI-
 ### 🔹 Clone the Repo
 
 ```bash
-git clone https://github.com/<your-username>/DailyEventsPlanner.git
+git clone https://github.com/vishnusx/DailyEventsPlanner.git
 cd DailyEventsPlanner
 ```
 
