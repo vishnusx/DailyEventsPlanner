@@ -48,22 +48,26 @@ A responsive web application that helps users optimally plan their day using AI-
 ### Frontend Setup
 1. Install Node.js dependencies:
     ```bash
+    cd client
     npm install
     ```
 
 2. Create an environment file in the root directory:
     ```bash
+    cd backend
     echo "OPENAI_API_KEY=your_api_key_here" > .env
     ```
 
 ### Running the Application locally 🏃
 1. Start the backend (runs on port 5001 by default):
     ```bash
+    cd backend
     python app.py
     ```
 
 2. Start the frontend(client) (runs on port 3000 in a separate terminal):
     ```bash
+    cd client
     npm start
     ```
 
